@@ -10,11 +10,18 @@
 }
 .pika-icon {
   margin: 1rem 2.5rem 0 2.5rem;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
 }
 
 .nav-bar {
   background-color: #DE1F26;
   display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
 }
 .nav-bar__links {
   display: flex;
@@ -24,10 +31,10 @@
   text-transform: uppercase;
   color: #fff;
   margin: 1.75rem 3rem 0 0;
-  padding-bottom: 1.75rem;
 }
 .nav-bar__links--box {
   display: flex;
+  width: 75%;
 }
 .nav-bar__links:hover {
   color: #FECF0A;
@@ -39,6 +46,32 @@
 }
 
 .nav-bar__links--box a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sub-bar {
+  display: flex;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0.5rem 2rem;
+  font-weight: 300;
+  color: #fff;
+}
+.sub-bar:hover {
+  color: #FECF0A;
+}
+.sub-bar__box {
+  display: flex;
+  margin-left: 6rem;
+}
+
+.sub-bar a:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sub-bar a:visited {
   text-decoration: none;
   color: #fff;
 }
