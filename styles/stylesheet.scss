@@ -8,6 +8,9 @@
     padding: 0;
 }
 
+h1, h2, h3, p, link{
+    font-family: "futura std";
+}
 .pika-icon {
     width: 3rem;
 }
@@ -17,6 +20,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: $poke-site-orange;
+    background: linear-gradient(0deg, #de1f26, #e02628, #e12c2a, #e3312c, #e5372e, #e63b30, #e84032, #ea4434, #eb4836, #ed4c39, #ee503b, #f0543d);
 }
 
 .card {
