@@ -8,35 +8,39 @@
   src: url("../../assets/fonts/FuturaStd-Bold.woff2") format("woff2"), url("../../assets/fonts/FuturaStd-Bold.woff") format("woff");
   font-weight: 600;
 }
+.pika-icon {
+  margin: 1rem 2.5rem 0 2.5rem;
+}
+
 .nav-bar {
   background-color: #DE1F26;
-  padding: 2rem;
   display: flex;
 }
 .nav-bar__links {
+  display: flex;
+  text-align: center;
   font-weight: 300;
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #fff;
-  margin: 1rem 1.75rem;
+  margin: 1.75rem 3rem 0 0;
+  padding-bottom: 1.75rem;
 }
 .nav-bar__links--box {
   display: flex;
-  width: 75%;
+}
+.nav-bar__links:hover {
+  color: #FECF0A;
 }
 
-a:link {
+.nav-bar__links--box a:link {
   text-decoration: none;
   color: #fff;
 }
 
-a:visited {
+.nav-bar__links--box a:visited {
   text-decoration: none;
   color: #fff;
-}
-
-a:hover {
-  border-bottom: 0.25rem solid #fff;
 }
 
 .map {

@@ -1,0 +1,17 @@
+@mixin hover-style($color) {
+	&:hover {
+		background: lighten($color, 3%);
+	}
+}
+
+@mixin animation($content) {
+  animation: $content;
+  -moz-animation: $content;
+  -webkit-animation: $content;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} { @content; }
+  @-moz-keyframes #{$name} { @content; }
+  @-webkit-keyframes #{$name} { @content; }
+}
