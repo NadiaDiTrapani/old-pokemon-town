@@ -101,8 +101,6 @@ function fetchPokemonData(pokemon){
 }
 
 function renderPokemon(pokemonData){
-
-
     let allPokemonContainer = document.getElementById('pokemon-container');
     let pokemonContainer = document.createElement("div")
     pokemonContainer.classList.add('ui', 'card');
@@ -142,7 +140,6 @@ function createTypes(types, ul){
 }
 
 // This appends the relevant image to the card
-
 function createpokemonImage(pokemonID, containerDiv){
     let pokemonImageContainer = document.createElement('div')
 
