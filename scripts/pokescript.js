@@ -5,30 +5,38 @@
 // }
 
 function palletTownRender(){
+    let title = document.querySelector('.title-text')
+    title.innerText="PALLET TOWN"
     let allPokemonContainer = document.querySelector('#pokemon-container')
     allPokemonContainer.innerText = "";
 
     fetchPalletPokemon();
 }
 function viridianCityRender(){
+    let title = document.querySelector('.title-text')
+    title.innerText="VIRIDIAN CITY"
     let allPokemonContainer = document.querySelector('#pokemon-container')
     allPokemonContainer.innerText = "";
 
     fetchViridianPokemon();
 }
 function ceruleanCityRender(){
+    let title = document.querySelector('.title-text')
+    title.innerText="CERULEAN CITY"
     let allPokemonContainer = document.querySelector('#pokemon-container')
     allPokemonContainer.innerText = "";
 
     fetchCeruleanPokemon();
 }
 function pewterCityRender(){
+    let title = document.querySelector('.title-text')
+    title.innerText="PEWTER CITY"
     let allPokemonContainer = document.querySelector('#pokemon-container')
     allPokemonContainer.innerText = "";
 
     fetchPewterPokemon();
 }
- 
+
 // ${identifier.value}
 //https://pokeapi.co/api/v2/pokemon/${pokemonID}/
 //https://pokeapi.co/api/v2/pokemon?limit=151
@@ -83,9 +91,6 @@ function fetchPewterPokemon(){
     })
 }
 
-
-
-
 function fetchPokemonData(pokemon){
     let url = pokemon.url // <--- this is saving the pokemon url to a variable to use in the fetch. 
     fetch(url)
@@ -113,11 +118,11 @@ function renderPokemon(pokemonData){
     let pokemonID = document.createElement('p')
     pokemonID.classList.add('card__id')
     pokemonID.innerText = `${pokemonData.id}` 
-   
+
     // ul to hold pokemon types
     let pokemonTypes = document.createElement('ul')
     pokemonTypes.classList.add('card__type')
-  
+
     // go through the types array and create li tags for each one
     createTypes(pokemonData.types, pokemonTypes)
 
@@ -149,27 +154,19 @@ function createpokemonImage(pokemonID, containerDiv){
     containerDiv.append(pokemonImageContainer);
 }
 
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", () =>{
-     const locationNav = document.querySelector('.pallet-town');
-     locationNav.addEventListener('click', palletTownRender)
- })
+    const locationNav = document.querySelector('.pallet-town');
+    locationNav.addEventListener('click', palletTownRender)
+})
 document.addEventListener("DOMContentLoaded", () =>{
-     const locationNav = document.querySelector('.viridian-city');
-     locationNav.addEventListener('click', viridianCityRender)
- })
+    const locationNav = document.querySelector('.viridian-city');
+    locationNav.addEventListener('click', viridianCityRender)
+})
 document.addEventListener("DOMContentLoaded", () =>{
-     const locationNav = document.querySelector('.pewter-city');
-     locationNav.addEventListener('click', pewterCityRender)
- })
+    const locationNav = document.querySelector('.pewter-city');
+    locationNav.addEventListener('click', pewterCityRender)
+})
 document.addEventListener("DOMContentLoaded", () =>{
-     const locationNav = document.querySelector('.cerulean-city');
-     locationNav.addEventListener('click', ceruleanCityRender)
- })
-
-
-
+    const locationNav = document.querySelector('.cerulean-city');
+    locationNav.addEventListener('click', ceruleanCityRender)
+})
